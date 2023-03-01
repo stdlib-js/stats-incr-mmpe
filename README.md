@@ -164,9 +164,9 @@ console.log( accumulator() );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/stats/incr/mmape`][@stdlib/stats/incr/mmape]</span><span class="delimiter">: </span><span class="description">compute a moving mean absolute percentage error (MAPE) incrementally.</span>
--   <span class="package-name">[`@stdlib/stats/incr/mme`][@stdlib/stats/incr/mme]</span><span class="delimiter">: </span><span class="description">compute a moving mean error (ME) incrementally.</span>
--   <span class="package-name">[`@stdlib/stats/incr/mpe`][@stdlib/stats/incr/mpe]</span><span class="delimiter">: </span><span class="description">compute the mean percentage error (MPE) incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats-incr/mmape`][@stdlib/stats/incr/mmape]</span><span class="delimiter">: </span><span class="description">compute a moving mean absolute percentage error (MAPE) incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats-incr/mme`][@stdlib/stats/incr/mme]</span><span class="delimiter">: </span><span class="description">compute a moving mean error (ME) incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats-incr/mpe`][@stdlib/stats/incr/mpe]</span><span class="delimiter">: </span><span class="description">compute the mean percentage error (MPE) incrementally.</span>
 
 </section>
 

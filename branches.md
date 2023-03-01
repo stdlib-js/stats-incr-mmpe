@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/incr/mmpe"
-click B href "https://github.com/stdlib-js/stats-incr-mmpe/tree/main"
-click C href "https://github.com/stdlib-js/stats-incr-mmpe/tree/production"
-click D href "https://github.com/stdlib-js/stats-incr-mmpe/tree/esm"
-click E href "https://github.com/stdlib-js/stats-incr-mmpe/tree/deno"
-click F href "https://github.com/stdlib-js/stats-incr-mmpe/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/incr/mmpe"
+%% click B href "https://github.com/stdlib-js/stats-incr-mmpe/tree/main"
+%% click C href "https://github.com/stdlib-js/stats-incr-mmpe/tree/production"
+%% click D href "https://github.com/stdlib-js/stats-incr-mmpe/tree/esm"
+%% click E href "https://github.com/stdlib-js/stats-incr-mmpe/tree/deno"
+%% click F href "https://github.com/stdlib-js/stats-incr-mmpe/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/stats/incr/mmpe
