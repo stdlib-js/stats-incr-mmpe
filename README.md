@@ -58,14 +58,30 @@ where `f_i` is the forecast value and `a_i` is the actual value.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-mmpe
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import incrmmpe from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmpe@esm/index.mjs';
+var incrmmpe = require( '@stdlib/stats-incr-mmpe' );
 ```
 
 #### incrmmpe( window )
@@ -130,14 +146,9 @@ m = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import incrmmpe from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmpe@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var incrmmpe = require( '@stdlib/stats-incr-mmpe' );
 
 var accumulator;
 var v1;
@@ -154,10 +165,6 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( v1, v2 );
 }
 console.log( accumulator() );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -189,7 +196,7 @@ console.log( accumulator() );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -253,11 +260,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/mmape]: https://github.com/stdlib-js/stats-incr-mmape/tree/esm
+[@stdlib/stats/incr/mmape]: https://github.com/stdlib-js/stats-incr-mmape
 
-[@stdlib/stats/incr/mme]: https://github.com/stdlib-js/stats-incr-mme/tree/esm
+[@stdlib/stats/incr/mme]: https://github.com/stdlib-js/stats-incr-mme
 
-[@stdlib/stats/incr/mpe]: https://github.com/stdlib-js/stats-incr-mpe/tree/esm
+[@stdlib/stats/incr/mpe]: https://github.com/stdlib-js/stats-incr-mpe
 
 <!-- </related-links> -->
 
