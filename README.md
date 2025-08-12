@@ -58,38 +58,32 @@ where `f_i` is the forecast value and `a_i` is the actual value.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-mmpe
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-incrmmpe = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmpe@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var incrmmpe = require( 'path/to/vendor/umd/stats-incr-mmpe/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmpe@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.incrmmpe;
-})();
-</script>
+var incrmmpe = require( '@stdlib/stats-incr-mmpe' );
 ```
 
 #### incrmmpe( window )
@@ -141,7 +135,7 @@ m = accumulator();
 
 -   Input values are **not** type checked. If provided `NaN` or a value which, when used in computations, results in `NaN`, the accumulated value is `NaN` for **at least** `W-1` future invocations. If non-numeric inputs are possible, you are advised to type check and handle accordingly **before** passing the value to the accumulator function.
 -   As `W` (f,a) pairs are needed to fill the window buffer, the first `W-1` returned values are calculated from smaller sample sizes. Until the window is full, each returned value is calculated from all provided values.
--   Be careful when interpreting the [mean percentage error][mean-percentage-error] as errors can cancel. This stated, that errors can cancel makes the [mean percentage error][mean-percentage-error] suitable for measuring the bias in forecasts. 
+-   Be careful when interpreting the [mean percentage error][mean-percentage-error] as errors can cancel. This stated, that errors can cancel makes the [mean percentage error][mean-percentage-error] suitable for measuring the bias in forecasts.
 -   **Warning**: the [mean percentage error][mean-percentage-error] is **not** suitable for intermittent demand patterns (i.e., when `a_i` is `0`). Interpretation is most straightforward when actual and forecast values are positive valued (e.g., number of widgets sold).
 
 </section>
@@ -154,14 +148,9 @@ m = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmpe@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var incrmmpe = require( '@stdlib/stats-incr-mmpe' );
 
 var accumulator;
 var v1;
@@ -178,11 +167,6 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( v1, v2 );
 }
 console.log( accumulator() );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -281,11 +265,11 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/mmape]: https://github.com/stdlib-js/stats-incr-mmape/tree/umd
+[@stdlib/stats/incr/mmape]: https://github.com/stdlib-js/stats-incr-mmape
 
-[@stdlib/stats/incr/mme]: https://github.com/stdlib-js/stats-incr-mme/tree/umd
+[@stdlib/stats/incr/mme]: https://github.com/stdlib-js/stats-incr-mme
 
-[@stdlib/stats/incr/mpe]: https://github.com/stdlib-js/stats-incr-mpe/tree/umd
+[@stdlib/stats/incr/mpe]: https://github.com/stdlib-js/stats-incr-mpe
 
 <!-- </related-links> -->
 
